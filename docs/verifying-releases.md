@@ -21,19 +21,19 @@ what you downloaded came from that workflow, unchanged:
   provenance in both registries, and its names and digest are in `images.txt`, which `SHA256SUMS` covers.
 
 This applies to every release from the first one,
-[v0.1.0](https://github.com/HoneyBearTech/ubuntu-server-auto-setup/releases/tag/v0.1.0). The examples use
-[v0.8.1](https://github.com/HoneyBearTech/ubuntu-server-auto-setup/releases/tag/v0.8.1); use the version you
+[v0.1.0](https://github.com/HoneyBearTech/usas/releases/tag/v0.1.0). The examples use
+[v0.8.1](https://github.com/HoneyBearTech/usas/releases/tag/v0.8.1); use the version you
 downloaded. You need [cosign](https://docs.sigstore.dev/cosign/system_config/installation/) 3.0 or later (with
 cosign 2.6, add `--new-bundle-format`), and the [GitHub CLI](https://cli.github.com/) for the provenance.
 
 ## The release files
 
 Download `SHA256SUMS`, `SHA256SUMS.sigstore.json`, the archive and the SBOM from the
-[release page](https://github.com/HoneyBearTech/ubuntu-server-auto-setup/releases), then:
+[release page](https://github.com/HoneyBearTech/usas/releases), then:
 
 ```sh
 cosign verify-blob SHA256SUMS --bundle SHA256SUMS.sigstore.json \
-  --certificate-identity-regexp '^https://github\.com/HoneyBearTech/ubuntu-server-auto-setup/\.github/workflows/release\.yml@refs/tags/v' \
+  --certificate-identity-regexp '^https://github\.com/HoneyBearTech/(usas|ubuntu-server-auto-setup)/\.github/workflows/release\.yml@refs/tags/v' \
   --certificate-oidc-issuer https://token.actions.githubusercontent.com
 sha256sum -c SHA256SUMS    # on macOS: shasum -a 256 -c SHA256SUMS
 ```
@@ -48,7 +48,9 @@ gh attestation verify ubuntu-server-auto-setup-0.8.1.tar.gz --repo HoneyBearTech
   --signer-workflow HoneyBearTech/ubuntu-server-auto-setup/.github/workflows/release.yml
 ```
 
-It prints the verified attestation, including the commit and the workflow run. To verify offline, add
+It prints the verified attestation, including the commit and the workflow run. Releases up to 0.8.1 were
+signed before the repository was renamed, so they name `HoneyBearTech/ubuntu-server-auto-setup`; for later
+releases use `HoneyBearTech/usas` in both options. To verify offline, add
 `--bundle ubuntu-server-auto-setup-0.8.1.provenance.sigstore.json`. The same works for the SBOM.
 
 ## The container image
@@ -58,7 +60,7 @@ Check the image's signature before you run it (`start.ps1 -Verify` does the same
 
 ```sh
 cosign verify docker.io/honeybeartech/ubuntu-server-auto-setup:0.8.1 \
-  --certificate-identity-regexp '^https://github\.com/HoneyBearTech/ubuntu-server-auto-setup/\.github/workflows/release\.yml@refs/tags/v' \
+  --certificate-identity-regexp '^https://github\.com/HoneyBearTech/(usas|ubuntu-server-auto-setup)/\.github/workflows/release\.yml@refs/tags/v' \
   --certificate-oidc-issuer https://token.actions.githubusercontent.com
 ```
 
@@ -84,7 +86,7 @@ If you use a clone instead of the archive, check the tag. The maintainer signs v
 whose public half is in [`.github/allowed_signers`](../.github/allowed_signers):
 
 ```sh
-git clone https://github.com/HoneyBearTech/ubuntu-server-auto-setup.git && cd ubuntu-server-auto-setup
+git clone https://github.com/HoneyBearTech/usas.git && cd usas
 git -c gpg.ssh.allowedSignersFile=.github/allowed_signers tag -v v0.8.1
 ```
 

@@ -2,7 +2,7 @@
 
 ## Reporting a Vulnerability
 
-Please report security vulnerabilities using [GitHub's private vulnerability reporting](https://github.com/HoneyBearTech/ubuntu-server-auto-setup/security/advisories/new) rather than a public issue.
+Please report security vulnerabilities using [GitHub's private vulnerability reporting](https://github.com/HoneyBearTech/usas/security/advisories/new) rather than a public issue.
 
 Include what you found, how to reproduce it (the playbook, the relevant inventory variables with secrets and
 addresses replaced by placeholders, and the Proxmox VE and Ubuntu versions), which version or commit you
@@ -27,7 +27,7 @@ The latest release and `main` receive security fixes; a release stops receiving 
 
 ## Published vulnerabilities
 
-Fixed vulnerabilities in ubuntu-server-auto-setup are published as [GitHub security advisories](https://github.com/HoneyBearTech/ubuntu-server-auto-setup/security/advisories) (with a CVE where one applies), naming the affected and fixed versions, how to tell whether you're affected, and how to fix or work around it, and they're listed in the release notes. How vulnerabilities in the project's dependencies (Ansible, its collections and the Python packages) are handled is described in [docs/dependencies.md](docs/dependencies.md).
+Fixed vulnerabilities in ubuntu-server-auto-setup are published as [GitHub security advisories](https://github.com/HoneyBearTech/usas/security/advisories) (with a CVE where one applies), naming the affected and fixed versions, how to tell whether you're affected, and how to fix or work around it, and they're listed in the release notes. How vulnerabilities in the project's dependencies (Ansible, its collections and the Python packages) are handled is described in [docs/dependencies.md](docs/dependencies.md).
 
 ## Scope
 

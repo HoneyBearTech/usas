@@ -16,7 +16,7 @@ You need: a Linux or macOS machine with Python 3.12+ and `git`; root SSH access 
 ## 1. Get the code
 
 ```sh
-git clone https://github.com/HoneyBearTech/ubuntu-server-auto-setup.git
+git clone https://github.com/HoneyBearTech/usas.git
 cd ubuntu-server-auto-setup
 python3 -m venv .venv && . .venv/bin/activate
 make deps

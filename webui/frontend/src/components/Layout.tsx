@@ -13,7 +13,7 @@ import { Icon, Mark } from "./Icons";
 import type { IconName } from "./Icons";
 import { Notice } from "./Parts";
 
-const DOCS = "https://github.com/HoneyBearTech/ubuntu-server-auto-setup/blob/main/docs";
+const DOCS = "https://github.com/HoneyBearTech/usas/blob/main/docs";
 
 interface NavItem {
   href: string;

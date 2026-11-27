@@ -80,9 +80,9 @@ ENV PATH=/opt/venv/bin:/usr/local/bin:/usr/bin:/bin \
     USAS_VERSION=${USAS_VERSION}
 LABEL org.opencontainers.image.title="ubuntu-server-auto-setup" \
       org.opencontainers.image.description="Install Ubuntu Server on Proxmox VE VMs hands-off and harden them, from a web UI" \
-      org.opencontainers.image.source="https://github.com/HoneyBearTech/ubuntu-server-auto-setup" \
-      org.opencontainers.image.url="https://github.com/HoneyBearTech/ubuntu-server-auto-setup" \
-      org.opencontainers.image.documentation="https://github.com/HoneyBearTech/ubuntu-server-auto-setup/blob/main/docs/web-ui.md" \
+      org.opencontainers.image.source="https://github.com/HoneyBearTech/usas" \
+      org.opencontainers.image.url="https://github.com/HoneyBearTech/usas" \
+      org.opencontainers.image.documentation="https://github.com/HoneyBearTech/usas/blob/main/docs/web-ui.md" \
       org.opencontainers.image.licenses="MIT"
 WORKDIR /app
 USER 10001:10001

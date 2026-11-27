@@ -90,7 +90,7 @@ if ($Verify) {
         exit 1
     }
     & cosign verify $Image `
-        --certificate-identity-regexp '^https://github\.com/HoneyBearTech/ubuntu-server-auto-setup/\.github/workflows/release\.yml@refs/tags/v' `
+        --certificate-identity-regexp '^https://github\.com/HoneyBearTech/(usas|ubuntu-server-auto-setup)/\.github/workflows/release\.yml@refs/tags/v' `
         --certificate-oidc-issuer https://token.actions.githubusercontent.com | Out-Null
     if ($LASTEXITCODE -ne 0) {
         Write-Host "The image's signature didn't verify. Don't run it; see docs/verifying-releases.md." -ForegroundColor Red

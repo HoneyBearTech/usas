@@ -4,7 +4,7 @@ The [web UI](web-ui.md) aims to meet the [Web Content Accessibility Guidelines (
 at level AA, so that people who use a keyboard, a screen reader, zoom or other assistive technology can
 set up and run the playbooks too. This page says what is checked, how, and what is known not to be covered
 yet. Problems are bugs: please report them in
-[GitHub Issues](https://github.com/HoneyBearTech/ubuntu-server-auto-setup/issues).
+[GitHub Issues](https://github.com/HoneyBearTech/usas/issues).
 
 The command-line interface (the playbooks and `make`) is plain text in a terminal and inherits the
 terminal's accessibility.

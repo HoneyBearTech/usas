@@ -243,7 +243,7 @@ export function Proxmox() {
       <PageHead title="Proxmox API" crumb="Set up · step 1" />
       <p className="lead">
         The Proxmox VE API and the node the VMs are created on. The token needs the privileges listed in{" "}
-        <a href="https://github.com/HoneyBearTech/ubuntu-server-auto-setup/blob/main/docs/installing.md#2-create-the-proxmox-api-token">
+        <a href="https://github.com/HoneyBearTech/usas/blob/main/docs/installing.md#2-create-the-proxmox-api-token">
           installing.md</a>. The token is stored in the encrypted Vault and never shown again.
       </p>
       <ErrorSummary errors={errors} />
@@ -374,7 +374,7 @@ export function Defaults() {
               <p className="help">
                 LUKS2, unlocked at boot by the VM's virtual TPM while its Secure Boot state is unchanged. It
                 protects a copied disk or backup without the TPM state, not a VM whose Proxmox host is compromised:
-                see <a href="https://github.com/HoneyBearTech/ubuntu-server-auto-setup/blob/main/docs/security.md#secure-boot-and-disk-encryption">
+                see <a href="https://github.com/HoneyBearTech/usas/blob/main/docs/security.md#secure-boot-and-disk-encryption">
                 security.md</a>.
               </p>
             ) : null}

@@ -5,21 +5,21 @@
   </picture>
 </h1>
 
-[![CI](https://github.com/HoneyBearTech/ubuntu-server-auto-setup/actions/workflows/checks.yml/badge.svg)](https://github.com/HoneyBearTech/ubuntu-server-auto-setup/actions/workflows/checks.yml)
-[![CodeQL](https://github.com/HoneyBearTech/ubuntu-server-auto-setup/actions/workflows/codeql.yml/badge.svg)](https://github.com/HoneyBearTech/ubuntu-server-auto-setup/actions/workflows/codeql.yml)
-[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/HoneyBearTech/ubuntu-server-auto-setup/badge)](https://scorecard.dev/viewer/?uri=github.com/HoneyBearTech/ubuntu-server-auto-setup)
+[![CI](https://github.com/HoneyBearTech/usas/actions/workflows/checks.yml/badge.svg)](https://github.com/HoneyBearTech/usas/actions/workflows/checks.yml)
+[![CodeQL](https://github.com/HoneyBearTech/usas/actions/workflows/codeql.yml/badge.svg)](https://github.com/HoneyBearTech/usas/actions/workflows/codeql.yml)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/HoneyBearTech/usas/badge)](https://scorecard.dev/viewer/?uri=github.com/HoneyBearTech/usas)
 [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/15740/badge)](https://www.bestpractices.dev/projects/15740)
 [![OpenSSF Baseline](https://www.bestpractices.dev/projects/15740/baseline)](https://www.bestpractices.dev/projects/15740)
-[![Fuzzing](https://github.com/HoneyBearTech/ubuntu-server-auto-setup/actions/workflows/fuzz.yml/badge.svg)](https://github.com/HoneyBearTech/ubuntu-server-auto-setup/actions/workflows/fuzz.yml)
-[![Installer ISO](https://github.com/HoneyBearTech/ubuntu-server-auto-setup/actions/workflows/installer-iso.yml/badge.svg)](https://github.com/HoneyBearTech/ubuntu-server-auto-setup/actions/workflows/installer-iso.yml)
-[![Cloud images](https://github.com/HoneyBearTech/ubuntu-server-auto-setup/actions/workflows/cloud-images.yml/badge.svg)](https://github.com/HoneyBearTech/ubuntu-server-auto-setup/actions/workflows/cloud-images.yml)
-[![Release](https://img.shields.io/github/v/release/HoneyBearTech/ubuntu-server-auto-setup?sort=semver)](https://github.com/HoneyBearTech/ubuntu-server-auto-setup/releases/latest)
+[![Fuzzing](https://github.com/HoneyBearTech/usas/actions/workflows/fuzz.yml/badge.svg)](https://github.com/HoneyBearTech/usas/actions/workflows/fuzz.yml)
+[![Installer ISO](https://github.com/HoneyBearTech/usas/actions/workflows/installer-iso.yml/badge.svg)](https://github.com/HoneyBearTech/usas/actions/workflows/installer-iso.yml)
+[![Cloud images](https://github.com/HoneyBearTech/usas/actions/workflows/cloud-images.yml/badge.svg)](https://github.com/HoneyBearTech/usas/actions/workflows/cloud-images.yml)
+[![Release](https://img.shields.io/github/v/release/HoneyBearTech/usas?sort=semver)](https://github.com/HoneyBearTech/usas/releases/latest)
 [![Docker Hub](https://img.shields.io/docker/v/honeybeartech/ubuntu-server-auto-setup?sort=semver&logo=docker&logoColor=white&label=Docker%20Hub)](https://hub.docker.com/r/honeybeartech/ubuntu-server-auto-setup)
 [![Image size](https://img.shields.io/docker/image-size/honeybeartech/ubuntu-server-auto-setup?sort=semver&logo=docker&logoColor=white&label=image%20size)](https://hub.docker.com/r/honeybeartech/ubuntu-server-auto-setup/tags)
 [![Docker pulls](https://img.shields.io/docker/pulls/honeybeartech/ubuntu-server-auto-setup?logo=docker&logoColor=white)](https://hub.docker.com/r/honeybeartech/ubuntu-server-auto-setup)
-[![GHCR mirror](https://img.shields.io/badge/mirror-ghcr.io-2496ED?logo=github&logoColor=white)](https://github.com/HoneyBearTech/ubuntu-server-auto-setup/pkgs/container/ubuntu-server-auto-setup)
+[![GHCR mirror](https://img.shields.io/badge/mirror-ghcr.io-2496ED?logo=github&logoColor=white)](https://github.com/HoneyBearTech/usas/pkgs/container/ubuntu-server-auto-setup)
 [![Platforms](https://img.shields.io/badge/runs_on-Windows_%7C_Linux_%7C_macOS-2496ED?logo=docker&logoColor=white)](docs/web-ui.md)
-[![License: MIT](https://img.shields.io/github/license/HoneyBearTech/ubuntu-server-auto-setup)](LICENSE)
+[![License: MIT](https://img.shields.io/github/license/HoneyBearTech/usas)](LICENSE)
 [![Ubuntu 22.04 | 24.04 | 26.04 LTS](https://img.shields.io/badge/Ubuntu-22.04_%7C_24.04_%7C_26.04_LTS-E95420?logo=ubuntu&logoColor=white)](#supported-versions)
 [![Debian 12 | 13](https://img.shields.io/badge/Debian-12_%7C_13-A81D33?logo=debian&logoColor=white)](#supported-versions)
 [![CentOS Stream, Rocky Linux, AlmaLinux 9 | 10](https://img.shields.io/badge/CentOS_Stream_%7C_Rocky_%7C_Alma-9_%7C_10-10B981?logo=rockylinux&logoColor=white)](#supported-versions)
@@ -212,7 +212,7 @@ You need:
 1. Get the code and install the dependencies in a virtual environment:
 
    ```sh
-   git clone https://github.com/HoneyBearTech/ubuntu-server-auto-setup.git
+   git clone https://github.com/HoneyBearTech/usas.git
    cd ubuntu-server-auto-setup
    python3 -m venv .venv && . .venv/bin/activate
    make deps
@@ -413,7 +413,7 @@ Each release's notes list the exact ansible-core and collection versions its che
 Up to 2021 this repository held an interactive bash script (`setup.sh`) for Ubuntu 14.04 to 20.04. It was
 replaced by these Ansible playbooks and is no longer maintained, but it is still in the git history: the
 last commit that has it is
-[`f2e802d`](https://github.com/HoneyBearTech/ubuntu-server-auto-setup/tree/f2e802d).
+[`f2e802d`](https://github.com/HoneyBearTech/usas/tree/f2e802d).
 
 ## License
 

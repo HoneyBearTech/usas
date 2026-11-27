@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-RAW = "https://raw.githubusercontent.com/HoneyBearTech/ubuntu-server-auto-setup/main/"
+RAW = "https://raw.githubusercontent.com/HoneyBearTech/usas/main/"
 LIMIT = 25000
 
 

@@ -6,7 +6,7 @@ considered and not done, and review findings that were declined, with why. Newes
 
 ## 2026-11-21: fix the wcmatch advisory in the lint tools
 
-Job `wcmatch-advisory`, [#217](https://github.com/HoneyBearTech/ubuntu-server-auto-setup/pull/217).
+Job `wcmatch-advisory`, [#217](https://github.com/HoneyBearTech/usas/pull/217).
 
 **Decision:** GHSA-53pm-wgxf-c6qf (published 2026-11-20) is fixed by hand: a `wcmatch>=11.2` floor in
 `requirements-dev.txt`, like the `black` and `pygments` floors, and a lock update of only wcmatch and bracex in
@@ -22,7 +22,7 @@ request, and Renovate never edits `requirements-dev.txt`, whose lower bounds are
 
 ## 2026-11-20: move dependency updates from Dependabot to Renovate
 
-Job `renovate-migrate`, [#213](https://github.com/HoneyBearTech/ubuntu-server-auto-setup/pull/213).
+Job `renovate-migrate`, [#213](https://github.com/HoneyBearTech/usas/pull/213).
 
 **Decision:** Renovate proposes and, where Dependabot's auto-merge workflow did, merges dependency updates;
 Dependabot keeps only its alerts, which Renovate reads.
