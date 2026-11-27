@@ -3,7 +3,7 @@
 This is where ubuntu-server-auto-setup intends to go over roughly the next year (from October 2026), and
 what it deliberately won't do. It is a statement of intent, not a promise: plans change, and this page is
 updated when they do. Decisions about scope are made as described in [GOVERNANCE.md](../GOVERNANCE.md);
-ideas and requests are welcome in [GitHub Issues](https://github.com/HoneyBearTech/ubuntu-server-auto-setup/issues).
+ideas and requests are welcome in [GitHub Issues](https://github.com/HoneyBearTech/usas/issues).
 
 ## Where it stands
 

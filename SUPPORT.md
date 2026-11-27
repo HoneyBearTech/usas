@@ -5,7 +5,7 @@ so this is a best-effort policy, not a contract.
 
 ## Getting help
 
-- **Questions, bugs and feature ideas**: [GitHub Issues](https://github.com/HoneyBearTech/ubuntu-server-auto-setup/issues).
+- **Questions, bugs and feature ideas**: [GitHub Issues](https://github.com/HoneyBearTech/usas/issues).
   Say which version or commit you run, your Proxmox VE, Ubuntu and ansible-core versions, which playbook
   failed, and what you expected. Replace secrets, host names and addresses with placeholders.
 - **Security vulnerabilities**: never in a public issue; see [SECURITY.md](SECURITY.md).
@@ -20,7 +20,7 @@ so this is a best-effort policy, not a contract.
 | `main` | bug fixes and security fixes | always (it's where fixes land first) |
 
 The first release of the Ansible version is
-[v0.1.0](https://github.com/HoneyBearTech/ubuntu-server-auto-setup/releases/tag/v0.1.0).
+[v0.1.0](https://github.com/HoneyBearTech/usas/releases/tag/v0.1.0).
 
 - A fix is released as a new version (a patch release such as 0.1.1 for fixes only), never applied to an
   older release.

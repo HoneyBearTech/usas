@@ -29,18 +29,18 @@ walk-through, see the [quick start](quick-start.md).
 
 ## 1. Get a release
 
-Download a release from the [releases page](https://github.com/HoneyBearTech/ubuntu-server-auto-setup/releases),
+Download a release from the [releases page](https://github.com/HoneyBearTech/usas/releases),
 check it as described in [verifying-releases.md](verifying-releases.md), and unpack it; or clone the
 repository and check out a release tag:
 
 ```sh
-git clone https://github.com/HoneyBearTech/ubuntu-server-auto-setup.git
+git clone https://github.com/HoneyBearTech/usas.git
 cd ubuntu-server-auto-setup
 git -c gpg.ssh.allowedSignersFile=.github/allowed_signers tag -v v0.8.1   # the tag is signed
 git checkout v0.8.1
 ```
 
-The latest release is listed on the [releases page](https://github.com/HoneyBearTech/ubuntu-server-auto-setup/releases);
+The latest release is listed on the [releases page](https://github.com/HoneyBearTech/usas/releases);
 `main` has the newest changes, tested but not yet released.
 
 Then install the dependencies in a virtual environment:

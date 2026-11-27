@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: >-
-        Please check the [roadmap](https://github.com/HoneyBearTech/ubuntu-server-auto-setup/blob/main/docs/roadmap.md)
+        Please check the [roadmap](https://github.com/HoneyBearTech/usas/blob/main/docs/roadmap.md)
         first: it lists what's planned and what this project deliberately won't do.
   - type: textarea
     id: problem

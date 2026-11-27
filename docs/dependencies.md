@@ -240,6 +240,6 @@ a `# noqa: <rule>` with a reason on that line, or a CodeQL dismissal with its re
 ## Published vulnerabilities
 
 Vulnerabilities in the project itself are published as
-[GitHub security advisories](https://github.com/HoneyBearTech/ubuntu-server-auto-setup/security/advisories),
+[GitHub security advisories](https://github.com/HoneyBearTech/usas/security/advisories),
 with the affected and fixed versions, how to tell whether you're affected, and how to fix or mitigate, as
 described in [SECURITY.md](../SECURITY.md).

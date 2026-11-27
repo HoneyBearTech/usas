@@ -10,7 +10,7 @@ including what is in scope, which pull requests are merged, and when a release i
 
 Decisions happen in the open wherever possible:
 
-- **Bugs, features and questions** are discussed in [GitHub Issues](https://github.com/HoneyBearTech/ubuntu-server-auto-setup/issues).
+- **Bugs, features and questions** are discussed in [GitHub Issues](https://github.com/HoneyBearTech/usas/issues).
   Anyone can open one or comment.
 - **Changes** land only through pull requests to `main`, which is protected: every pull request must pass
   the required CI checks, and it is squash-merged. The pull request description records what changed and

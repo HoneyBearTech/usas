@@ -658,10 +658,10 @@ registries ([verifying-releases.md](verifying-releases.md#the-container-image)):
   ```bash
   for image in docker.io/honeybeartech/ubuntu-server-auto-setup:0.8.1 ghcr.io/honeybeartech/ubuntu-server-auto-setup:0.8.1; do
     cosign verify "$image" \
-      --certificate-identity-regexp '^https://github\.com/HoneyBearTech/ubuntu-server-auto-setup/\.github/workflows/release\.yml@refs/tags/v' \
+      --certificate-identity-regexp '^https://github\.com/HoneyBearTech/(usas|ubuntu-server-auto-setup)/\.github/workflows/release\.yml@refs/tags/v' \
       --certificate-oidc-issuer https://token.actions.githubusercontent.com
-    gh attestation verify "oci://$image" --repo HoneyBearTech/ubuntu-server-auto-setup \
-      --signer-workflow HoneyBearTech/ubuntu-server-auto-setup/.github/workflows/release.yml
+    gh attestation verify "oci://$image" --repo HoneyBearTech/usas \
+      --signer-workflow HoneyBearTech/usas/.github/workflows/release.yml
   done
   ```
 

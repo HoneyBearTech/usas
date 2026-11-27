@@ -1148,7 +1148,7 @@ Ansible playbooks.
 
 - The bash script `setup.sh` (and `setupLibrary.sh`) for Ubuntu 14.04 to 20.04 has been **replaced** and is
   no longer maintained. It is still in the git history: the last commit that has it is
-  [`f2e802d`](https://github.com/HoneyBearTech/ubuntu-server-auto-setup/tree/f2e802d). Servers set up with
+  [`f2e802d`](https://github.com/HoneyBearTech/usas/tree/f2e802d). Servers set up with
   it can be brought under the new baseline with `playbooks/baseline.yml` once they run Ubuntu 24.04 or
   26.04.
 
@@ -1186,16 +1186,16 @@ Ansible playbooks.
 - `setup.sh`, `setupLibrary.sh`, the bash test-library submodule (`.gitmodules`), and the CircleCI and old
   GitHub Actions configurations that tested them.
 
-[Unreleased]: https://github.com/HoneyBearTech/ubuntu-server-auto-setup/compare/v0.8.1...HEAD
-[0.8.1]: https://github.com/HoneyBearTech/ubuntu-server-auto-setup/releases/tag/v0.8.1
-[0.8.0]: https://github.com/HoneyBearTech/ubuntu-server-auto-setup/releases/tag/v0.8.0
-[0.7.0]: https://github.com/HoneyBearTech/ubuntu-server-auto-setup/releases/tag/v0.7.0
-[0.6.0]: https://github.com/HoneyBearTech/ubuntu-server-auto-setup/releases/tag/v0.6.0
-[0.5.0]: https://github.com/HoneyBearTech/ubuntu-server-auto-setup/releases/tag/v0.5.0
-[0.4.0]: https://github.com/HoneyBearTech/ubuntu-server-auto-setup/releases/tag/v0.4.0
-[0.3.0]: https://github.com/HoneyBearTech/ubuntu-server-auto-setup/releases/tag/v0.3.0
-[0.2.3]: https://github.com/HoneyBearTech/ubuntu-server-auto-setup/releases/tag/v0.2.3
-[0.2.2]: https://github.com/HoneyBearTech/ubuntu-server-auto-setup/releases/tag/v0.2.2
-[0.2.1]: https://github.com/HoneyBearTech/ubuntu-server-auto-setup/releases/tag/v0.2.1
-[0.2.0]: https://github.com/HoneyBearTech/ubuntu-server-auto-setup/releases/tag/v0.2.0
-[0.1.0]: https://github.com/HoneyBearTech/ubuntu-server-auto-setup/releases/tag/v0.1.0
+[Unreleased]: https://github.com/HoneyBearTech/usas/compare/v0.8.1...HEAD
+[0.8.1]: https://github.com/HoneyBearTech/usas/releases/tag/v0.8.1
+[0.8.0]: https://github.com/HoneyBearTech/usas/releases/tag/v0.8.0
+[0.7.0]: https://github.com/HoneyBearTech/usas/releases/tag/v0.7.0
+[0.6.0]: https://github.com/HoneyBearTech/usas/releases/tag/v0.6.0
+[0.5.0]: https://github.com/HoneyBearTech/usas/releases/tag/v0.5.0
+[0.4.0]: https://github.com/HoneyBearTech/usas/releases/tag/v0.4.0
+[0.3.0]: https://github.com/HoneyBearTech/usas/releases/tag/v0.3.0
+[0.2.3]: https://github.com/HoneyBearTech/usas/releases/tag/v0.2.3
+[0.2.2]: https://github.com/HoneyBearTech/usas/releases/tag/v0.2.2
+[0.2.1]: https://github.com/HoneyBearTech/usas/releases/tag/v0.2.1
+[0.2.0]: https://github.com/HoneyBearTech/usas/releases/tag/v0.2.0
+[0.1.0]: https://github.com/HoneyBearTech/usas/releases/tag/v0.1.0

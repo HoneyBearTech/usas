@@ -7,7 +7,7 @@ Everyone taking part follows the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## Reporting bugs and suggesting changes
 
-- Use [GitHub Issues](https://github.com/HoneyBearTech/ubuntu-server-auto-setup/issues) for bugs, questions
+- Use [GitHub Issues](https://github.com/HoneyBearTech/usas/issues) for bugs, questions
   and ideas. Say which playbook failed, your Proxmox VE, Ubuntu and ansible-core versions, and include the
   failing task's output (run with `-v`) and the relevant inventory variables, with secrets, host names and
   addresses replaced by placeholders. For anything bigger than a small fix, please open an issue first so we
@@ -25,7 +25,7 @@ What you need:
   in [docs/installing.md](docs/installing.md), and a VM ID range and IP addresses you can throw away.
 
 ```sh
-git clone https://github.com/HoneyBearTech/ubuntu-server-auto-setup.git && cd ubuntu-server-auto-setup
+git clone https://github.com/HoneyBearTech/usas.git && cd usas
 python3 -m venv .venv && . .venv/bin/activate
 pip install --require-hashes -r requirements-ci.txt   # the exact, hash-pinned versions CI uses
 ansible-galaxy collection install -r requirements.yml
