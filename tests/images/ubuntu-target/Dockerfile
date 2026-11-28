@@ -19,8 +19,8 @@ FROM ubuntu:24.04@sha256:73b999393d07f2bf65a40373778a44dc9a6d54ad7718d29247d8ff9
 FROM ubuntu:22.04@sha256:9abcaffc92a5279fff3a6a41635c0800ea33e528425fb389658806476e7defde AS ubuntu-22.04
 FROM debian:trixie-slim@sha256:a72b4433de1cf7d6bae0c4cee74d0547f58601a643b3375f070c51600d63b6b2 AS debian-13
 FROM debian:bookworm-slim@sha256:734a72b3d6142a71993b4bc580ca01d8ca687f77a2c422d96a961d3376b179bc AS debian-12
-FROM quay.io/centos/centos:stream10@sha256:a266f7ae08c4b3f5d0eaaa8a500201d40d260ecdfa81e49991fe8d27699d69e9 AS centos-stream-10
-FROM quay.io/centos/centos:stream9@sha256:875f628a88425be59d5edf2aa81e9836dd803de564ce3f728f23c63660d65662 AS centos-stream-9
+FROM quay.io/centos/centos:stream10@sha256:b042adb7687b322f80765277b552dcdd9c5f98bd3ca64e2f46175d2ae55fc82b AS centos-stream-10
+FROM quay.io/centos/centos:stream9@sha256:b76d33c9df2e709b3a2d81ed2913c9deee814a9aabba16a57226b3a9fbea6d84 AS centos-stream-9
 FROM rockylinux/rockylinux:10@sha256:827d37bc128288ccf160ee318bb3cb92d591164cb217e92f8bc61e3982ae1834 AS rocky-10
 FROM rockylinux/rockylinux:9@sha256:8101994123cf3d0a8fee517bee7f39e555c7d92bd2d9eb3303cc988a0eeed00f AS rocky-9
 FROM almalinux:10@sha256:5a4b41a427c9717be8f4ac2a32aa22efbae5f9124fbcb79a6765394f312acfe8 AS alma-10

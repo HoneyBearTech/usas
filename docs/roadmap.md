@@ -81,6 +81,11 @@ clusters built, upgraded and kept updated from the inventory
   Atkinson Hyperlegible fonts), with axe-core and a contrast check of every colour pair in CI.
 - Done: an automated keyboard and axe-core check of every page in a real browser in CI (Playwright,
   Chromium).
+- The SSH keys' fingerprints shown without being asked: each key's type, `SHA256:` fingerprint and comment
+  when the GitHub user or keys URL is saved, and again on the Run page before a run that writes
+  `authorized_keys`, with a warning when the account has no keys or its keys changed since the last run. A
+  mistyped user name is then caught before that account's keys replace yours on every server (with
+  `ssh_keys_exclusive`, the default). Today **Preview the keys** on the Defaults page shows them on request.
 
 **Supply chain**
 - Done: CI and the image install hash-pinned sets of Python packages (`requirements-ci.txt`,
